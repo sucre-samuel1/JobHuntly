@@ -31,7 +31,6 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-// Define your main layout component
 export const MainLayout = () => (
   <>
     <Home />

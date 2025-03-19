@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 
 import Footer from "./components/Footer/Footer";
 
-const layout = () => {
+const Layout = () => {
   return (
     <>
       <Header />
@@ -13,4 +13,4 @@ const layout = () => {
   );
 };
 
-export default layout;
+export default Layout;
