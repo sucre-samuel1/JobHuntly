@@ -5,7 +5,7 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/-Live%20Demo-4640DE?style=for-the-badge&logo=vercel&logoColor=white)](https://github.com/psparwez/JobHuntly)
+[![Live Demo](https://img.shields.io/badge/-Live%20Demo-4640DE?style=for-the-badge&logo=vercel&logoColor=white)](https://job-huntly-five.vercel.app/)
 
 
 <br />
