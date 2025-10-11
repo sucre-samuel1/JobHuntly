@@ -3,16 +3,22 @@ import { Link, NavLink } from "react-router-dom";
 import navLogo from "../../assets/images/header/logo.svg";
 import { IoMenuSharp } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
+import useScrollPosition from "../../hook/useScrollPosition";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const isScrolled = useScrollPosition(50);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className="w-full bg-[#F8F8FD]">
+    // <header className=""
+    <header
+      className={`sticky top-0 left-0 w-full z-50 bg-[#F8F8FD] transition-shadow duration-300 ${
+        isScrolled ? "border-b" : ""
+      }`}
+    >
       <nav className="container flex items-center justify-between py-4">
         {/* Logo and Menu */}
         <div className="flex items-center gap-10">
