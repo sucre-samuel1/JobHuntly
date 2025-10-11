@@ -49,7 +49,7 @@ const Home = () => {
           {/* Left Section */}
           <div className="lg:self-start lg:pt-28">
             <div className="relative">
-              <h1 className="text-[40px] xl:text-7xl leading-[1.2] font-semibold font-clashDisplay text-textDarkColor mb-9">
+              <h1 className="text-4xl xl:text-7xl leading-[1.2] font-semibold font-clashDisplay text-textDarkColor mb-9">
                 Discover more than{" "}
                 <span className="text-secondryColor">5000+ Jobs</span>
               </h1>
@@ -144,13 +144,13 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className="mt-6 flex text-base  text-textGrayColor/80">
-              <p> Popular:</p>
-              <div className="">
+            <div className="mt-6 gap-2 flex text-base  text-textGrayColor/80 flex-col md:flex-row ">
+              <p className="text-[15px]"> Popular Tags:</p>
+              <div className="flex flex-wrap gap-2.5">
                 {popularLists.map((list) => (
                   <span
                     key={list}
-                    className="inline-block px-3 py-1.5 shrink-0 sm:py-2 mb-2 ml-2 text-sm font-medium border rounded-lg cursor-pointer sm:mb-0 text-textGrayColor/70 border-textGrayColor/10 hover:bg-blue-100/20"
+                    className="inline-block px-3 py-1.5 shrink-0 sm:py-2  text-sm font-medium border rounded-lg cursor-pointer sm:mb-0 text-textGrayColor/70 border-textGrayColor/10 hover:bg-blue-100/20"
                   >
                     {list}
                   </span>
