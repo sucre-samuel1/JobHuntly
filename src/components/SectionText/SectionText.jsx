@@ -14,10 +14,7 @@ const SectionText = ({ title, subTitle, ctaName }) => {
         className="flex group items-center gap-[5px] font-semibold md:text-base text-sm text-nowrap text-primaryColor transition duration-300"
       >
         {ctaName}
-        <GoArrowRight
-          size={23}
-          className="transition duration-300 group-hover:translate-x-1"
-        />
+        <GoArrowRight className="transition duration-300 group-hover:translate-x-1 size-5" />
       </Link>
     </div>
   );
