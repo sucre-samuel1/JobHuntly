@@ -144,8 +144,8 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className="mt-6 gap-2 flex text-base  text-textGrayColor/80 flex-col md:flex-row ">
-              <p className="text-[15px]"> Popular Tags:</p>
+            <div className="mt-6 gap-3 flex text-base  text-textGrayColor/80 ">
+              <p className="text-[15px] text-nowrap"> Popular Tags:</p>
               <div className="flex flex-wrap gap-2.5">
                 {popularLists.map((list) => (
                   <span
