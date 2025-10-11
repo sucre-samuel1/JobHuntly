@@ -14,11 +14,7 @@
 ### Demo Screenshots
 
 <div align="center">
-  <br />
-      <img src="https://github.com/user-attachments/assets/f35bf509-3869-4987-9e5e-118080050b93" alt="Project Banner">
-      <br />
-  <br />
-  <br />
+  <img src="public/og_image.webp" alt="Jobhunty Demo Screenshot" >
 </div>
 
 <div align="center">
