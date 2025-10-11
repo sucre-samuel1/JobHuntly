@@ -144,13 +144,13 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className="mt-6 gap-3 flex text-base  text-textGrayColor/80 ">
-              <p className="text-[15px] text-nowrap"> Popular Tags:</p>
+            <div className="mt-6 gap-4 flex text-base  text-textGrayColor/80 flex-col md:flex-row ">
+              <p className="text-[15px]"> Popular Tags:</p>
               <div className="flex flex-wrap gap-2.5">
                 {popularLists.map((list) => (
                   <span
                     key={list}
-                    className="inline-block px-3 py-1.5 shrink-0 sm:py-2  text-sm font-medium border rounded-lg cursor-pointer sm:mb-0 text-textGrayColor/70 border-textGrayColor/10 hover:bg-blue-100/20"
+                    className="inline-block px-3 py-1.5 shrink-0 sm:py-2  text-sm font-medium border rounded-lg cursor-pointer sm:mb-0 text-textGrayColor/70 backdrop-blur-sm border-textGrayColor/10 hover:bg-blue-100/20"
                   >
                     {list}
                   </span>
