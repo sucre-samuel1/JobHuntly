@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { latestJobLists } from "../../Data/Data.js";
 import Pattern from "../../assets/images/latest-jobs/Pattern.svg";
 import SectionText from "../SectionText/SectionText.jsx";
+import { generateSlug } from "../../utils/index.js";
 const LatestJobs = () => {
   return (
     <section className="py-20">
@@ -17,26 +18,22 @@ const LatestJobs = () => {
           <div className="grid grid-cols-1 gap-10 mt-10 md:gap-y-4 md:grid-cols-2 xl:grid-cols-3">
             {latestJobLists.map((joblist) => (
               <div
-                className="flex items-start px-6 py-6 transition duration-300 bg-white border rounded-lg shadow-2xl shadow-gray-500/10 hover:-translate-y-2 lg:px-6"
+                className="flex items-start px-4 py-6 transition duration-300 bg-white border rounded-lg  shadow-2xl shadow-gray-500/10 hover:-translate-y-2 lg:px-6 flex-col min-w-min xs:flex-row gap-4 xs:gap-0"
                 key={joblist.id}
               >
-                <div className="flex items-center justify-center flex-shrink-0 w-16 h-16 mr-4 bg-white rounded-full shadow-sm ring-1 ring-gray-100">
+                <div className="flex items-center justify-center flex-shrink-0 w-14 h-14 lg:w-16 lg:h-16 mr-4 bg-white rounded-md sm:rounded-full shadow-sm ring-1 ring-gray-100">
                   <img
                     src={joblist.logo}
-                    className="flex-shrink-0 object-cover lg:w-10"
+                    className="flex-shrink-0 object-cover w-8 lg:w-10"
                     alt={joblist.companyName}
                   />
                 </div>
                 <div>
                   <Link
-                    to={`${joblist.title
-                      .toLowerCase()
-                      .trim()
-                      .split(" ")
-                      .join("-")}`}
+                    to={`${generateSlug(joblist.title)}`}
                     className="transition duration-300 select-none hover:text-primaryColor"
                   >
-                    <h3 className="mb-1 text-xl font-semibold">
+                    <h3 className="mb-1 text-lg sm:text-xl font-semibold">
                       {joblist.title}
                     </h3>
                   </Link>
@@ -44,7 +41,7 @@ const LatestJobs = () => {
                     {joblist.companyName} <span>{joblist.location}</span>
                   </p>
 
-                  <div className="flex items-center mt-4">
+                  <div className="flex items-center mt-4 *:text-nowrap">
                     <label
                       htmlFor=""
                       className="px-[10px] text-xs py-[4px] lg:text-sm border border-[#56cdad29] select-none text-[#56CDAD] rounded-full bg-[#56CDAD1A]"

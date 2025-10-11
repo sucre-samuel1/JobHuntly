@@ -34,6 +34,9 @@ export default {
         redHatDisplay: ["Red Hat Display", "sans-serif"],
         clashDisplay: ["Clash Display", "sans-serif"],
       },
+      screens: {
+        xs: "480px",
+      },
     },
   },
   plugins: [tailwindScrollbar],
