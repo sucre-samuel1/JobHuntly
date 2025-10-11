@@ -64,7 +64,7 @@ const Home = () => {
               seeking new career heights.
             </p>
             {/* Search Bar */}
-            <div className="lg:py-7 relative lg:absolute z-20 mt-5 max-w-full mx-auto lg:max-w-[800px] lg:w-full px-5 py-10 rounded-lg shadow-gray-400/15 bg-white shadow-xl">
+            <div className="lg:py-7 relative z-20 mt-5 max-w-full mx-auto lg:min-w-[800px] lg:w-full px-5 py-10 rounded-lg shadow-gray-400/15 bg-white shadow-xl">
               <div className="flex flex-wrap items-center gap-5 lg:flex-nowrap">
                 {/* Job Title Input */}
                 <div className="flex items-center w-full h-full gap-3 transition duration-300 border-b focus-within:border-primaryColor/70 group border-textGrayColor/20">
@@ -144,17 +144,19 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <p className="mt-6 text-base text-textGrayColor/80">
-              Popular:
-              {popularLists.map((list) => (
-                <span
-                  key={list}
-                  className="inline-block px-3 py-2 mb-2 ml-2 text-sm font-medium border rounded-lg cursor-pointer sm:mb-0 text-textGrayColor/70 border-textGrayColor/10 hover:bg-blue-100/20"
-                >
-                  {list}
-                </span>
-              ))}
-            </p>
+            <div className="mt-6 flex text-base  text-textGrayColor/80">
+              <p> Popular:</p>
+              <div className="">
+                {popularLists.map((list) => (
+                  <span
+                    key={list}
+                    className="inline-block px-3 py-1.5 shrink-0 sm:py-2 mb-2 ml-2 text-sm font-medium border rounded-lg cursor-pointer sm:mb-0 text-textGrayColor/70 border-textGrayColor/10 hover:bg-blue-100/20"
+                  >
+                    {list}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
           {/* Right Section */}
           <div className="flex-shrink-0 w-full ">
