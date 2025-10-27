@@ -110,7 +110,7 @@ const Footer = () => {
             className="text-sm sm:text-base text-gray-300/70"
             title="Created by @Ps Parwez"
           >
-            &copy; {new Date().getFullYear()} JobHuntly. All rights reserved.
+            &copy; {new Date().getFullYear()} Gig-hunter. All rights reserved.
           </p>
           <ul className="flex items-center gap-2 ">
             {socialLists.map((social) => (

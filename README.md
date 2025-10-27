@@ -1,7 +1,7 @@
 <div align="center">
 
 <h1> Jobhunty • Job Search Platform </h1>
-<p>JobHuntly is a modern job search landing page designed to <br> connect job seekers with top employers. It offers smooth scrolling, dynamic job listings, <br> and a clean, responsive UI for an enhanced user experience.</p>
+<p>Gig-hunter is a modern job search landing page designed to <br> connect job seekers with top employers. It offers smooth scrolling, dynamic job listings, <br> and a clean, responsive UI for an enhanced user experience.</p>
 
 <br/>
 
@@ -27,7 +27,7 @@
   <br/>
 
 # 🚀 Project Overview
-**JobHuntly** Landing Page is a modern, responsive website designed as the front face for a job-search platform. It provides an engaging user experience for job seekers passionate about startups and those looking for new career opportunities.
+**Gig-hunter** Landing Page is a modern, responsive website designed as the front face for a job-search platform. It provides an engaging user experience for job seekers passionate about startups and those looking for new career opportunities.
 
 The landing page features smooth scrolling, dynamic job categories, trusted company highlights, and a professional, user-friendly design built using React, React Router, and Lenis for smooth animations.
 
@@ -67,13 +67,13 @@ Before starting, make sure you have the following installed:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/psparwez/JobHuntly.git
+    git clone https://github.com/psparwez/Gig-hunter.git
     ```
 
 2. **Navigate to the project folder:**
 
     ```bash
-    cd JobHuntly
+    cd Gig-hunter
     ```
 
 3. **Install the project dependencies using npm:**
@@ -90,7 +90,7 @@ npm run dev
 5. Open [http://localhost:5173/](http://localhost:5173/) in your browser to view the project.
 
 
-You’re now ready to explore and customize **JobHuntly** locally!
+You’re now ready to explore and customize **Gig-hunter** locally!
 
 ---
 
