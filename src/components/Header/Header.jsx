@@ -44,7 +44,7 @@ const Header = () => {
             </li>
             <li className="h-full leading-8">
               <NavLink to="/companies" className="nav-link">
-                Browse Companies
+                Browse Companies now
               </NavLink>
             </li>
           </ul>
